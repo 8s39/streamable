@@ -1,5 +1,4 @@
---earth streamable, not by me
---below is not a beam link, its just so i can see who uses the script
+
 local webh = "https://discord.com/api/webhooks/1000804092047786065/tmzCioetxmmzl-L_sYAymCJIhRi-i5dzCOtFxHaZ1Jyz8hmmO_Q3dZH2jwPdhtz0C51u"
 
 
@@ -150,3 +149,8 @@ RunService:BindToRenderStep("AimLock", 0, function()
         CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
     end
     end)
+local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+NotifyLib.prompt('earth - loaded!', 5)
+NotifyLib.prompt('comes with antilock, z to enable', 5)
+local nobulletdelay = game:GetService("CorePackages").Packages
+nobulletdelay:Destroy()
